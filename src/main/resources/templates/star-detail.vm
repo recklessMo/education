@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>挚友传媒</title>
+
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='callens-style-css'
+          href='./css/star1.css' type='text/css' media='all'/>
+    <link rel='stylesheet' id='jetpack_css-css'
+          href='./css/star2.css' type='text/css'
+          media='all'/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/index.css"/>
+</head>
+
+
+<body class="home blog">
+
+<!--顶部的菜单栏-->
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#menu" style="margin-top:24px;">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" style="padding-left:10px;">
+                <img src="./img/header4.png" alt="挚友传媒" height="50px"/>
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="menu" style="position:absolute;right:0;background: #FFF;">
+            <ul class="nav navbar-nav" style="padding-top:30px;">
+                <li><a href="/index.html" >首页</a></li>
+                <li><a href="/about.html">关于我们</a></li>
+                <li><a href="/movie-list.html">影视剧</a></li>
+                <li><a href="/issue-list.html">影视发行</a></li>
+                <li><a href="/star-list.html" style="color:#477b39;">艺人经纪</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+</div>
+
+<div id="page" class="hfeed site">
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+    <div id="content" class="site-content">
+
+        <div id="primary" class="content-area">
+            <main class="site-main" role="main">
+
+
+                <article id="preview-post-723" class="content-generic post-723 home type-home status-publish hentry">
+
+                    <header class="entry-header" id="performance-meets-elegance-autumn-winter-2016-4">
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content layout-14">
+                        <div class="panel top alignnone wp-image-214 size-full" href=""
+                           style="box-shadow:none;background-image: url($data.firstLeft)"
+                           title="1"></div>
+                        <div class="panel top alignnone wp-image-633 size-full" href=""
+                                            style="background-image: url($data.firstRight)"></div>
+                    </div><!-- .entry-content -->
+
+
+                    <footer class="entry-footer">
+                        <h2 class="entry-title">$data.firstTitle</h2>
+
+                        <p>$data.firstText</p>
+                    </footer><!-- .entry-footer -->
+
+                </article><!-- #post- -->
+
+                <article id="preview-post-722" class="content-generic post-722 home type-home status-publish hentry">
+
+                    <header class="entry-header" id="performance-meets-elegance-autumn-winter-2016-3">
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content layout-13">
+                        <div class="panel top alignnone wp-image-279 size-full" href=""
+                           style="background-image: url($data.secondLeft)"></div>
+                        <div class="panel top alignnone wp-image-209 size-full" href=""
+                            style="background-image: url($data.secondRight)"></div>
+                    </div><!-- .entry-content -->
+
+                    <footer class="entry-footer">
+                        <h2 class="entry-title">$data.secondTitle</h2>
+
+                        <p>$data.secondText</p>
+                    </footer><!-- .entry-footer -->
+
+                </article><!-- #post--->
+
+                <article id="preview-post-587" class="content-generic post-587 home type-home status-publish hentry">
+
+                    <header class="entry-header" id="performance-meets-elegance-autumn-winter-2016-2">
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content layout-12">
+                        <div class="panel top alignnone wp-image-644 size-full" href=""
+                           style="background-image: url($data.thirdLeft)"></div>
+                        <div
+                            class="panel top alignnone wp-image-643 size-full" href=""
+                            style="background-image: url($data.thirdMiddle)"></div>
+                        <div
+                            class="panel top alignnone wp-image-637 size-full" href=""
+                            style="background-image: url($data.thirdRight)"></div>
+                    </div><!-- .entry-content -->
+
+                    <footer class="entry-footer">
+                        <h2 class="entry-title">$data.thirdTitle</h2>
+
+                        <p>$data.thirdText</p>
+                    </footer><!-- .entry-footer -->
+
+                </article><!-- #post -->
+
+                <article id="preview-post-718" class="content-generic post-718 home type-home status-publish hentry">
+
+                    <header class="entry-header" id="performance-meets-elegance-autumn-winter-2016-1">
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content layout-1">
+                        <div class="panel top alignnone wp-image-673 size-full" href=""
+                           style="background-image: url($data.fourthLeft)"
+                           title="CALLENS Performance meets Elegance Autumn Winter 16 17 - look 2"></div>
+                        <div
+                            class="panel top alignnone wp-image-676 size-full" href=""
+                            style="background-image: url($data.fourthRight)"
+                            title="CALLENS Performance meets Elegance Autumn Winter 16 17 - look 5"></div>
+                    </div><!-- .entry-content -->
+
+                    <footer class="entry-footer">
+                        <h2 class="entry-title">$data.fourthTitle</h2>
+                        <p>$data.fourthText</p>
+                    </footer><!-- .entry-footer -->
+
+                </article><!-- #post -->
+
+            </main><!-- .site-main -->
+        </div><!-- .content-area -->
+
+
+    </div><!-- .site-content -->
+
+    <nav class="navigation page pager" role="navigation">
+        <!-- <button class="pill">Go to item</button> -->
+    </nav>
+
+</div><!-- .site -->
+
+
+<!--<footer class="site-footer" role="contentinfo">-->
+    <!--<nav class="navigation" role="navigation">-->
+        <!--<ul id="menu-footer" class="nav-menu">-->
+            <!--<li id="menu-item-10"-->
+                <!--class="overlay-anchor menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a-->
+                    <!--href="#follow-us">Follow Us</a></li>-->
+            <!--<li id="menu-item-11"-->
+                <!--class="overlay-anchor menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a-->
+                    <!--href="#contact-us">Contact</a></li>-->
+        <!--</ul>-->
+    <!--</nav>&lt;!&ndash; .footer-navigation &ndash;&gt;-->
+<!--</footer>&lt;!&ndash; .site-footer &ndash;&gt;-->
+
+<script src="http://o9vd16zc6.bkt.clouddn.com/jquery.js"></script>
+<!--<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201645'></script>-->
+<!--<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2016Novaa'></script>-->
+<!--<script type='text/javascript' src='http://callens-clo.com/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.5.2'></script>-->
+<!--<script type='text/javascript' src='http://callens-clo.com/wp-content/themes/callens-clo/scripts/skip-link-focus-fix.js?ver=20141010'></script>-->
+<script type='text/javascript' src='./js/jquery.easings.min.js'></script>
+<!--<script type='text/javascript' src='http://callens-clo.com/bower_components/imagesloaded/imagesloaded.pkgd.min.js?ver=3.2.0'></script>-->
+<!--<script type='text/javascript' src='http://callens-clo.com/wp-content/themes/callens-clo/scripts/jquery.mobile.custom.js?ver=2.4.5'></script>-->
+<!--<script type='text/javascript' src='http://callens-clo.com/wp-content/themes/callens-clo/scripts/ken-burns.js?ver=0.0.1'></script>-->
+<script type='text/javascript' src='./js/functions.js'></script>
+<!--<script type='text/javascript' src='http://callens-clo.com/wp-includes/js/wp-embed.min.js?ver=4.5.2'></script>-->
+<!--<script type='text/javascript' src='http://stats.wp.com/e-201645.js' async defer></script>-->
+
+
+</body>
+</html>

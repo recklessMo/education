@@ -1,0 +1,149 @@
+<div ng-controller="CoverController as cover"
+     style="background: #fff;overflow: auto;height:100%;padding: 15px;border: 1px solid #cfdbe2;">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-1" style="margin-top:6px;">
+                第一张头图
+            </div>
+            <div class="col-md-4">
+                <input ng-model="obj.firstHead.url" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchImg(1)">修改</button>
+            </div>
+
+            <div class="col-md-1" style="margin-top:6px;">
+                跳转页面
+            </div>
+            <div class="col-md-4">
+                <input ng-model="obj.firstHead.href" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchPage(1)">修改</button>
+            </div>
+        </div>
+
+        <div class="col-md-12" style="margin-top:20px;">
+            <div class="col-md-1" style="margin-top:6px;">
+                第二张头图
+            </div>
+            <div class="col-md-4">
+                <input ng-model="obj.secondHead.url" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchImg(2)">修改</button>
+            </div>
+
+            <div class="col-md-1" style="margin-top:6px;">
+                跳转页面
+            </div>
+            <div class="col-md-4">
+                <input ng-model="obj.secondHead.href" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchPage(2)">修改</button>
+            </div>
+        </div>
+
+        <div class="col-md-12" style="margin-top:20px;">
+            <div class="col-md-1" style="margin-top:6px;">
+                第三张头图
+            </div>
+            <div class="col-md-4">
+                <input ng-model="obj.thirdHead.url" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchImg(3)">修改</button>
+            </div>
+
+            <div class="col-md-1" style="margin-top:6px;">
+                跳转页面
+            </div>
+            <div class="col-md-4">
+                <input ng-model="obj.thirdHead.href" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchPage(3)">修改</button>
+            </div>
+        </div>
+
+        <div class="col-md-12" style="margin-top:40px;">
+            <div class="col-md-1" style="margin-top:6px;">
+                左下角图片
+            </div>
+            <div class="col-md-3">
+                <input ng-model="obj.left.url" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchImg(4)">修改</button>
+            </div>
+            <div class="col-md-1" style="margin-top:6px;">
+                跳转页面
+            </div>
+            <div class="col-md-3">
+                <input ng-model="obj.left.href" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchPage(4)">修改</button>
+            </div>
+            <div class="col-md-2">
+                <input ng-model="obj.left.text" placeholder="填写文案" class="form-control"/>
+            </div>
+        </div>
+
+        <div class="col-md-12" style="margin-top:20px;">
+            <div class="col-md-1" style="margin-top:6px;">
+                右中图片
+            </div>
+            <div class="col-md-3">
+                <input ng-model="obj.rightMiddle.url" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchImg(5)">修改</button>
+            </div>
+            <div class="col-md-1" style="margin-top:6px;">
+                跳转页面
+            </div>
+            <div class="col-md-3">
+                <input ng-model="obj.rightMiddle.href" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchPage(5)">修改</button>
+            </div>
+            <div class="col-md-2">
+                <input ng-model="obj.rightMiddle.text" placeholder="填写文案" class="form-control"/>
+            </div>
+        </div>
+
+        <div class="col-md-12" style="margin-top:20px;">
+            <div class="col-md-1" style="margin-top:6px;">
+                右下图片
+            </div>
+            <div class="col-md-3">
+                <input ng-model="obj.rightBottom.url" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchImg(6)">修改</button>
+            </div>
+            <div class="col-md-1" style="margin-top:6px;">
+                跳转页面
+            </div>
+            <div class="col-md-3">
+                <input ng-model="obj.rightBottom.href" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchPage(6)">修改</button>
+            </div>
+            <div class="col-md-2">
+                <input ng-model="obj.rightBottom.text" placeholder="填写文案" class="form-control"/>
+            </div>
+        </div>
+
+        <div class="col-md-12 text-center" style="margin-top:20px;">
+            <button class="btn btn-info" ng-click="publish()">发布</button>
+            <button class="btn btn-danger" ng-click="closeThisDialog({})" style="margin-left:20px;">取消</button>
+        </div>
+    </div>
+
+
+</div>

@@ -1,0 +1,155 @@
+<div ng-controller="AboutController"
+     style="background: #fff;overflow: auto;height:100%;padding: 15px;border: 1px solid #cfdbe2;">
+    <div class="row">
+        <!--顶部头图-->
+        <div class="col-md-12">
+            <div class="col-md-2" style="margin-top:6px;">
+                第一部分顶部合影
+            </div>
+            <div class="col-md-4">
+                <input ng-model="obj.firstImg" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchImg(1)">修改</button>
+            </div>
+            <div class="col-md-4">
+                <input ng-model="obj.secondImg" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchImg(2)">修改</button>
+            </div>
+        </div>
+
+        <div class="col-md-12" style="margin-top:20px;">
+            <div class="col-md-2" style="margin-top:6px;">
+                第二部分办公室图
+            </div>
+            <div class="col-md-9">
+                <input ng-model="obj.officeImg" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchImg(3)">修改</button>
+            </div>
+        </div>
+
+        <div class="col-md-12" style="margin-top:20px;">
+            <div class="col-md-6" style="margin-top:6px;">
+                第三部分领导团队照片
+                <button class="btn btn-info" ng-click="addLeaderItem({})">添加</button>
+            </div>
+        </div>
+
+        <div class="col-md-12" style="margin-top:20px;">
+            <table ng-table="leaderPicTableParams"
+                   class="table table-bordered table-hover table-condensed editable-table none-padding-table">
+                <tr ng-repeat="row in $data">
+                    <td title="'操作'">
+                        <button class="btn btn-link btn-sm" ng-click="deleteLeaderItem(row)">删除</button>
+                    </td>
+                    <td title="'照片'">
+                        <div class="form-inline">
+                            <input style="width: calc(100% - 80px);" class="form-control" ng-model="row.pic" type="text" disabled="1" placeholder="图片"/>
+                            <button class="btn btn-info" ng-click="searchImgInRow(row)">添加</button>
+                        </div>
+                    </td>
+                    <td title="'姓名'">
+                        <input ng-model="row.name" class="form-control" type="text"/>
+                    </td>
+                    <td title="'介绍'">
+                        <input ng-model="row.intro" class="form-control" type="text"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col-md-12" style="margin-top:20px;">
+            <div class="col-md-6" style="margin-top:6px;">
+                第四部分公司团队照片
+                <button class="btn btn-info" ng-click="addTeamPicItem({})">添加</button>
+            </div>
+        </div>
+
+        <div class="col-md-12" style="margin-top:20px;">
+            <table ng-table="teamPicTableParams"
+                   class="table table-bordered table-hover table-condensed editable-table none-padding-table">
+                <tr ng-repeat="row in $data">
+                    <td title="'操作'">
+                        <button class="btn btn-link btn-sm" ng-click="deleteTeamPicItem(row)">删除</button>
+                    </td>
+                    <td title="'照片'">
+                        <div class="form-inline">
+                            <input style="width: calc(100% - 80px);" class="form-control" ng-model="row.pic" type="text" disabled="1" placeholder="图片"/>
+                            <button class="btn btn-info" ng-click="searchImgInRow(row)">添加</button>
+                        </div>
+                    </td>
+                    <td title="'标题'">
+                        <input ng-model="row.name" class="form-control" type="text"/>
+                    </td>
+                    <td title="'描述'">
+                        <input ng-model="row.intro" class="form-control" type="text"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col-md-12" style="margin-top:20px;">
+            <div class="col-md-2" style="margin-top:6px;">
+                第五部分企业文化
+            </div>
+            <div class="col-md-10">
+                <input ng-model="obj.companyCulture" class="form-control" placeholder="建议外部编写好后复制粘贴过来~"/>
+            </div>
+        </div>
+
+        <!--详细介绍-->
+        <div class="col-md-12" style="margin-top:20px;">
+            <div class="col-md-4" style="margin-top:6px;">
+                第六部分项目合作
+                <button class="btn btn-info" ng-click="addWorkItem({})">添加</button>
+            </div>
+        </div>
+
+        <div class="col-md-12" style="margin-top:20px;">
+            <table ng-table="workTableParams"
+                   class="table table-bordered table-hover table-condensed editable-table none-padding-table">
+                <tr ng-repeat="row in $data">
+                    <td title="'操作'">
+                        <button class="btn btn-link btn-sm" ng-click="deleteWorkItem(row)">删除</button>
+                    </td>
+                    <td title="'介绍'">
+                        <input ng-model="row.intro" class="form-control" type="text"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!--详细介绍-->
+        <div class="col-md-12" style="margin-top:20px;">
+            <div class="col-md-4" style="margin-top:6px;">
+                第七部分简历投递
+                <button class="btn btn-info" ng-click="addResumeItem({})">添加</button>
+            </div>
+        </div>
+
+        <div class="col-md-12" style="margin-top:20px;">
+            <table ng-table="resumeTableParams"
+                   class="table table-bordered table-hover table-condensed editable-table none-padding-table">
+                <tr ng-repeat="row in $data">
+                    <td title="'操作'">
+                        <button class="btn btn-link btn-sm" ng-click="deleteResumeItem(row)">删除</button>
+                    </td>
+                    <td title="'内容'">
+                        <input ng-model="row.intro" class="form-control" type="text"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col-md-12 text-center" style="margin-top:20px;">
+            <button class="btn btn-info" ng-click="publish()">发布</button>
+            <button class="btn btn-danger" ng-click="closeThisDialog({})" style="margin-left:20px;">取消</button>
+        </div>
+    </div>
+
+
+</div>

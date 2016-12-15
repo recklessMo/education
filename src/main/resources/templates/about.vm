@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>挚友传媒</title>
+    <meta name="description" content="挚友  挚友传媒 传媒 四川挚友传媒有限公司">
+    <meta name="title" content="挚友传媒官方网站">
+    <!--<link rel="stylesheet" type="text/css" href="./css/styles.css"/>-->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/index.css"/>
+    <link rel="shortcut icon" href="./img/logo.png"/>
+    <link href="./css/uploadfile.css" rel="stylesheet">
+    <link href="./css/uploadfile.custom.css" rel="stylesheet">
+    <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+<!--<canvas style="position: absolute;z-index: -1;width: 100%;"></canvas>-->
+<body>
+
+<!--顶部的菜单栏-->
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#menu" style="margin-top:24px;">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/" style="padding-left:10px;">
+                <img src="./img/header4.png" alt="挚友传媒" height="50px"/>
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="menu" style="position:absolute;right:0;background: #FFF;">
+            <ul class="nav navbar-nav" style="padding-top:30px;">
+                <li><a href="/index.html">首页</a></li>
+                <li><a href="/about.html" style="color:#477b39;">关于我们</a></li>
+                <li><a href="/movie-list.html">影视剧</a></li>
+                <li><a href="/issue-list.html">影视发行</a></li>
+                <li><a href="/star-list.html">艺人经纪</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+</div>
+
+<!--中间的轮播栏-->
+<div class="container-fluid" style="margin-top:80px;">
+    <div class="row">
+        <header id="myCarousel" class="carousel slide">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <a href="#">
+                        <img class="img-responsive" src="$data.firstImg" width="100%" height="auto"/>
+                    </a>
+
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img class="img-responsive" src="$data.secondImg" width="100%" height="auto"/>
+                    </a>
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="icon-next"></span>
+            </a>
+        </header>
+    </div>
+</div>
+
+<!--正文-->
+<div class="container-fluid">
+    <div class="row full">
+        <div class="col-md-12" style="background: #f2f2f2;padding-bottom:30px;">
+            <!--<div class="page-cover">-->
+                <!--<img src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1479277634&di=1bc1d16bb797e3ef53e34fabb098b29b&src=http://p2.cri.cn/M00/1A/EB/CqgNOlZO3ayACWOAAAAAAAAAAAA751.5299x2325.jpg" width="100%" height="auto"/>-->
+            <!--</div>-->
+            <div class="page-cover" style="padding:70px 0 37px;">
+                <h1>about us</h1>
+            </div>
+            <div class="page-cover-content">
+                <h2 class="about-content1" style="max-width: 800px;font-size:15px;text-align: left;">四川挚友文化传播有限公司是一家拥有业内资深专业团队、丰富运营经验及成功案例的影业公司。业务板块主要包括影视制作、影视投资、宣传发行、VR影视内容制作、艺人经纪等。
+                    2015年初，公司开始进行战略转型和股权重组，引进景邦基金作为股东；2015年下旬，公司引入乐道资本，2016年初，公司又引入纪源资本等股东，经过三轮增资，公司重新梳理行业资源、重塑业务布局、重构核心团队，为后续快速发展打下坚实基础。2015年开始，公司业务重心瞄准国内整个电影产业并发力，先后投资、制作多部院线电影作品。</h2>
+                <div class="row" style="max-width: 800px;margin:0 auto;">
+                    <div class="col-md-4" style="padding-right:30px;">
+                        <h2 class="about-content1" style="font-size:15px;text-align:left;">
+                            旗下的电影发行公司——绽放影业以电影营销和发行为核心竞争力，目前公司已投资出品《奔爱》、《不可思议》、《宝贝当家》等院线电影，16年引进发行了印度电影《巴霍巴利王》该片号称是印度最贵的电影——耗资1亿6000万人民币，上映首日获得780万美元的票房，打破多项纪录，其辉煌业绩使其成为当之无愧的国内影视行业新兴之星。同时，挚友影业致力于电影全产业链的整合与拓展，投资拍摄了《风云九州》系列、《有为青年》、《独臂悍将贺炳炎》、《血战》、《泡芙小姐1》、《最后的说书人》《小静的奔跑》《一球定乾坤》、《大数据男友》、《峰回路转》等多类型影片，成功跻身电影投资制作的领跑行列。
+                            <br/>
+                            挚友影业立足于本土市场的发展，每年稳定出品投资电影作品，以及专为视频网站打造的优质网络剧，形成以内容制作为主，线上线下营销一体化的“多屏时代”内容供应商。
+                        </h2>
+                    </div>
+                    <div class="col-md-8" style="padding:0 30px 0 30px;">
+                        <div class="row" style="margin:0;">
+                            <div class="col-sm-4">
+                                <img width="100%" height="auto" src="/upload/1480827559990img8.jpg"/>
+                            </div>
+                            <div class="col-sm-4">
+                                <img width="100%" height="auto" src="/upload/1480827567488img9.jpg"/>
+                            </div>
+                            <div class="col-sm-4">
+                                <img width="100%" height="auto" src="/upload/1480827575016img10.jpg"/>
+                            </div>
+                        </div>
+                        <div class="row" style="margin:0;">
+                            <div class="col-sm-12">
+                                <img width="100%" height="auto" src="/upload/1480827592412img11.jpg"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img style="max-width:800px;margin:0 auto;" class="img-responsive" src="$data.officeImg" width="100%" height="auto"/>
+                <h2 class="about-content" style="margin-top:30px;font-size: 15px;">
+                    挚友影业通过杰出的创意策划能力、强大的活动执行力以及稳定的影院渠道关系为众多合作伙伴带来了电影领域的品牌传播体验；公司成立至今，与多位影视明星签订合作，迅速成长为颇有号召力的明星经纪公司之一。
+                </h2>
+            </div>
+            <div class="content-block">
+                <div class="sub-title">
+                    <span>
+                        <h3 class="colorgrey">领导团队</h3>
+                    </span>
+                </div>
+                <div class="people-list">
+                    #foreach($single in $data.leaderPicList)
+                        <div class="people-block1">
+                            <div class="people-block-img" style="background-image: url($single.pic)">
+                                <div class="people-block-img-two people-block-img-over"></div>
+                            </div>
+                            <h4>
+                                $single.name
+                            </h4>
+                            <p>
+                                $single.intro
+                            </p>
+                        </div>
+                    #end
+                </div>
+            </div>
+            <div class="content-block">
+                <div class="sub-title">
+                    <span>
+                        <h3 class="colorgrey">我们的团队</h3>
+                    </span>
+                </div>
+                <div class="people-list">
+                    #foreach($single in $data.teamPicList)
+                        <div class="people-block" style="width: 100%; margin-top:50px;">
+                            <img class="img-responsive" src="$single.pic" width="100%" height="auto"/>
+                            <h4>
+                                $single.name
+                            </h4>
+                            <p>
+                                $single.intro
+                            </p>
+                        </div>
+                    #end
+                </div>
+            </div>
+            <div class="content-block">
+                <div class="sub-title">
+                    <span>
+                        <h3 class="colorgrey">企业文化</h3>
+                    </span>
+                </div>
+                <p style="font-size: 16px;">
+                    $data.companyCulture
+                </p>
+            </div>
+            <div class="content-block">
+                <div class="sub-title">
+                    <span>
+                        <h3 class="colorgrey">项目合作</h3>
+                    </span>
+                </div>
+                #foreach($single in $data.workList)
+                    <div style="text-align: center;">
+                        <p style="font-size: 16px;">
+                            $single.intro
+                        </p>
+                    </div>
+                #end
+            </div>
+            <div class="contact-form">
+                <div class="sub-title">
+                    <span>
+                        <h3 class="colorgrey">加入我们</h3>
+                    </span>
+                </div>
+                #foreach($single in $data.resumeList)
+                    <div style="text-align: center;">
+                        <p style="font-size: 16px;">
+                            $single.intro
+                        </p>
+                    </div>
+                #end
+                <!--<div class="form-text">姓名</div>-->
+                <!--<div class="form-input">-->
+                    <!--<input type="text" size="30" name="name"/>-->
+                <!--</div>-->
+                <!--<div class="form-text">电话</div>-->
+                <!--<div class="form-input">-->
+                    <!--<input type="number" size="30" name="phone"/>-->
+                <!--</div>-->
+                <!--<div class="form-text">邮箱</div>-->
+                <!--<div class="form-input">-->
+                    <!--<input type="text" size="30" name="email"/>-->
+                <!--</div>-->
+                <!--<div class="form-text">简历</div>-->
+                <!--<div id="fileuploader">Upload</div>-->
+                <!--<div class="form-submit">-->
+                    <!--<input type="submit" value="提交"/>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--页脚-->
+<div class="container-fluid">
+    <div class="row" style="background: rgb(214, 217, 218);padding-top:20px;padding-bottom: 30px;">
+        <div class="col-md-4 text-center" style="height: 160px;border-right: solid 1px rgba(21, 18, 18, 0.26);">
+            <div style="margin-top:12px;">
+                <img src="./img/header4.png" alt="挚友传媒" height="50px"/>
+            </div>
+            <div style="margin-top:20px;font-size:12px;">
+                <i class="fa fa-map-marker" style="margin-left:-18px;"></i> 成都公司：成都市环球中心W5区7栋
+            </div>
+            <div style="margin-top:5px;font-size:12px;">
+                <i class="fa fa-map-marker"></i> 北京公司：北京东亿国际传媒C1座3-4层
+            </div>
+        </div>
+        <div class="col-md-4 text-center" style="height: 160px;border-right: solid 1px rgba(21, 18, 18, 0.26);">
+            <div style="margin-top:20px;font-size:15px;">
+                <i class="fa fa-phone"></i>  028-83395121
+            </div>
+            <div style="margin-top: 37px;font-size:12px;">
+                <div><a style="color:black;" href="http://www.miitbeian.gov.cn/">蜀ICP备16025683号</a></div>
+                <div style="margin-top:5px;">Copyright © 2016 zhiyouchuanmei All Rights Reserved</div>
+            </div>
+        </div>
+        <div class="col-md-4 text-center" style="height: 160px;border-right: solid 1px rgba(21, 18, 18, 0.26);padding-left:80px;">
+            <div style="margin-top: 20px;font-size:12px;">
+                <img style="float:left;" src="./img/wecode.jpeg" width="100px"/>
+                <div style="float:left;padding-left:20px;margin-top:50px;">
+                    扫一扫关注挚友传媒<br/>
+                    获取更多挚友传媒资讯
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="http://o9vd16zc6.bkt.clouddn.com/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="http://o9vd16zc6.bkt.clouddn.com/bootstrap.min.js"></script>
+<script src="./js/jquery.uploadfile.min.js"></script>
+<script>
+//    var result;
+//    $("#fileuploader").uploadFile({
+//        url:"/php/upload.php",
+//        multiple:false,
+//        dragDrop:false,
+//        maxFileCount:1,
+//        fileName:"myfile",
+//        uploadStr:"点击上传简历附件",
+//        dragDropStr:"拖拽文件至此",
+//        cancelStr:"删除",
+//        maxFileCountErrorStr:"不能上传, 最大允许上传文件数目为",
+//        autoSubmit: true,
+//        onSuccess:function(files,data,xhr,pd){
+//            result = data;
+//            alert(result);
+//        }
+//    });
+
+//    准备上传, 调用后台进行上传简历的snapshot保存
+
+</script>
+<script>
+    $('.carousel').carousel({
+        interval: 3000 //changes the speed
+    })
+</script>
+
+</body>
+</html>

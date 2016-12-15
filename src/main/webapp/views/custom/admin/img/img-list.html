@@ -1,0 +1,39 @@
+<div ng-controller="ImageListController as account" style="background: #fff;overflow: auto;height:100%;padding: 15px;border: 1px solid #cfdbe2;">
+    <div class="row">
+        <div class="col-md-3 pull-left">
+            <button class="btn btn-info" ng-click="add(-1)">
+                添加
+            </button>
+        </div>
+
+        <div class="col-md-7 pull-right">
+            <div class="pull-right">
+                <button class="btn btn-info" ng-click="activate()">
+                    查询
+                </button>
+            </div>
+            <div class="form-group pull-right" style="width:280px;padding-right: 20px;">
+                <input type="text"
+                       ng-model="tableParams.searchStr"
+                       placeholder="输入标记名进行查找"
+                       class="form-control"/>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 10px;">
+        <table ng-table="imgTableParams" class="table table-bordered table-hover table-condensed editable-table table-min">
+            <tr ng-repeat="item in $data" ng-dblclick="show(item.id)">
+                <td data-title="'标记'" style="text-align: center">{{item.name}}</td>
+                <td data-title="'链接'" style="text-align: center">http://www.zhiyouchuanmei.com{{item.url}}</td>
+                <td data-title="'上传时间'" style="text-align: center">{{item.time | date: 'yyyy-MM-dd HH:mm:ss'}}</td>
+                <td data-title="'操作'" style="text-align: center">
+                    <a class="btn btn-info" target="_blank" ng-href="{{'http://www.zhiyouchuanmei.com' + item.url}}">预览</a>
+                    <button class="btn btn-info" ng-click="choose(item)" ng-if="inDialog">选择</button>
+                    <button class="btn btn-danger" ng-click="delete(item.id)">删除</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>

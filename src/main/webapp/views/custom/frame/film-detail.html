@@ -1,0 +1,134 @@
+<div style="background: #fff;overflow: auto;height:100%;padding: 15px;border: 1px solid #cfdbe2;">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            电影详情页
+        </div>
+        <!--顶部图 + 文字介绍-->
+        <div class="col-md-12" style="margin-top:30px;">
+            <div class="col-md-1" style="margin-top:6px;">
+                第一张介绍图
+            </div>
+            <div class="col-md-4">
+                <input ng-model="obj.headImg" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchImg(1)">修改</button>
+            </div>
+
+            <div class="col-md-3">
+                <input placeholder="电影名称" ng-model="obj.headTitle" class="form-control"/>
+            </div>
+
+            <div class="col-md-3">
+                <input placeholder="名称下面的小介绍" ng-model="obj.headSmallTitle" class="form-control"/>
+            </div>
+
+        </div>
+
+        <!--剧情-->
+        <div class="col-md-12" style="margin-top:20px;">
+            <div class="col-md-1" style="margin-top:6px;">
+                剧情
+            </div>
+            <div class="col-md-11">
+                <input placeholder="剧情" ng-model="obj.story" class="form-control"/>
+            </div>
+        </div>
+
+        <!--详细介绍-->
+        <div class="col-md-12" style="margin-top:20px;">
+            <div class="col-md-4" style="margin-top:6px;">
+                详细介绍比如导演+监制+演员
+                <button class="btn btn-info" ng-click="addIntroItem({})">添加</button>
+            </div>
+        </div>
+
+        <div class="col-md-12" style="margin-top:20px;">
+            <table ng-table="introTableParams"
+                   class="table table-bordered table-hover table-condensed editable-table none-padding-table">
+                <tr ng-repeat="row in $data">
+                    <td title="'操作'">
+                        <button class="btn btn-link btn-sm" ng-click="deleteIntroItem(row)">删除</button>
+                    </td>
+                    <td title="'介绍'">
+                        <input ng-model="row.intro" class="form-control" type="text"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!--电影剧照轮播图-->
+        <div class="col-md-12" style="margin-top:20px;">
+            <div class="col-md-6" style="margin-top:6px;">
+                电影剧照轮播图
+                <button class="btn btn-info" ng-click="addPostItem({})">添加</button>
+            </div>
+        </div>
+
+        <div class="col-md-12" style="margin-top:20px;">
+            <table ng-table="postTableParams"
+                   class="table table-bordered table-hover table-condensed editable-table none-padding-table">
+                <tr ng-repeat="row in $data">
+                    <td title="'操作'">
+                        <button class="btn btn-link btn-sm" ng-click="deletePostItem(row)">删除</button>
+                    </td>
+                    <td title="'照片'">
+                        <div class="form-inline">
+                            <input style="width: calc(100% - 80px);" class="form-control" ng-model="row.url" type="text" disabled="1" placeholder="图片"/>
+                            <button class="btn btn-info" ng-click="searchImgInRow(row)">添加</button>
+                        </div>
+                    </td>
+                    <td title="'标题'">
+                        <input ng-model="row.title" class="form-control" type="text"/>
+                    </td>
+                    <td title="'描述'">
+                        <input ng-model="row.text" class="form-control" type="text"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!--预告片-->
+        <div class="col-md-12" style="margin-top:20px;">
+            <div class="col-md-2" style="margin-top:6px;">
+                预告片链接粘贴
+            </div>
+            <div class="col-md-10">
+                <input ng-model="obj.video" class="form-control" placeholder="去优酷找了粘贴进来~iframe形式的代码~"/>
+            </div>
+        </div>
+
+        <!--影评-->
+        <div class="col-md-12" style="margin-top:20px;">
+            <div class="col-md-6" style="margin-top:6px;">
+                影评
+                <button class="btn btn-info" ng-click="addCommentItem({})">添加</button>
+            </div>
+        </div>
+
+        <div class="col-md-12" style="margin-top:20px;">
+            <table ng-table="commentTableParams"
+                   class="table table-bordered table-hover table-condensed editable-table none-padding-table">
+                <tr ng-repeat="row in $data">
+                    <td title="'操作'">
+                        <button class="btn btn-link btn-sm" ng-click="deleteCommentItem(row)">删除</button>
+                    </td>
+                    <td title="'名字'">
+                        <input ng-model="row.name" class="form-control" type="text"/>
+                    </td>
+                    <td title="'影评'">
+                        <input ng-model="row.comment" class="form-control" type="text"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="col-md-12 text-center" style="margin-top:20px;">
+            <button class="btn btn-info" ng-click="publish()">发布</button>
+            <button class="btn btn-danger" ng-click="closeThisDialog({})" style="margin-left:20px;">取消</button>
+        </div>
+    </div>
+
+
+</div>

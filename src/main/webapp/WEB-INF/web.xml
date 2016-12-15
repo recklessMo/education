@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+         http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+	<!-- 加载公用的配置文件 -->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+            classpath:conf/application-context.xml
+            classpath:conf/spring-security.xml
+        </param-value>
+	</context-param>
+
+
+	<!-- 配置url入口 -->
+	<servlet-mapping>
+		<servlet-name>entryServlet</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<!-- 加载每个servlet需要的配置文件 -->
+	<servlet>
+		<servlet-name>entryServlet</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>
+				classpath:conf/spring-servlet.xml
+			</param-value>
+		</init-param>
+
+	</servlet>
+
+
+	<!-- 配置gzip filters -->
+	<filter>
+		<filter-name>GzipFilter</filter-name>
+		<filter-class>org.eclipse.jetty.servlets.GzipFilter</filter-class>
+		<async-supported>true</async-supported>
+		<init-param>
+			<param-name>mimeTypes</param-name>
+			<param-value>text/html,text/plain,text/xml,application/xhtml+xml,text/css,application/javascript,image/svg+xml,application/json</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>GzipFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+
+	<!-- 配置spring security对应的filter-->
+	<filter>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+
+	<!--在没有使用remember me的时候, 是通过session来进行管理用户凭证的, 这样的话需要设置session过期时间-->
+	<!--单位是分钟-->
+	<!--其实就是管理JSESSIONID对应的-->
+	<session-config>
+		<session-timeout>60</session-timeout>
+	</session-config>
+
+
+
+</web-app>

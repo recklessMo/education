@@ -1,0 +1,16 @@
+<div ng-controller="PostListController" style="background: #fff;overflow: auto;height:100%;padding: 15px;border: 1px solid #cfdbe2;">
+    <div style="margin-top: 10px;">
+        <table ng-table="postTableParams" class="table table-bordered table-hover table-condensed editable-table table-min">
+            <tr ng-repeat="item in $data" ng-dblclick="show(item.id)">
+                <td data-title="'序号'" style="text-align: center">{{item.id}}</td>
+                <td data-title="'姓名'" style="text-align: center">{{item.name}}</td>
+                <td data-title="'电话'" style="text-align: center">{{item.phone}}</td>
+                <td data-title="'邮箱'" style="text-align: center">{{item.email}}</td>
+                <td data-title="'操作'" style="text-align: center">
+                    <button class="btn btn-info" ng-click="download(item)">下载</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>

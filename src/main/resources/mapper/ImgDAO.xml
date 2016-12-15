@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.recklessmo.dao.img.ImgDAO">
+    <sql id = "columns">
+        id, name, file_name, time, url
+    </sql>
+
+    <sql id="byPageQuery">
+        <if test="searchStr != null and '' != searchStr">
+            <where>
+                (file_name like "%"#{searchStr}"%" or name like "%"#{searchStr}"%")
+            </where>
+        </if>
+    </sql>
+
+    <select id="listImgs" resultType="com.recklessmo.model.img.Img">
+        select
+        <include refid="columns"/>
+        from img
+        <include refid="byPageQuery"/>
+        order by time desc
+        <if test="page != 0">
+            limit #{startIndex}, #{count}
+        </if>
+    </select>
+
+    <select id="listImgsCount" resultType="java.lang.Integer">
+        select count(1) from img
+        <include refid="byPageQuery"/>
+    </select>
+
+    <insert id="addImg" parameterType = "com.recklessmo.model.img.Img">
+        insert into img(id, name, file_name, time, url)
+        values(#{id}, #{name}, #{fileName}, #{time}, #{url})
+    </insert>
+
+    <update id="deleteImg">
+        delete from img where id = #{id} limit 1
+    </update>
+
+    <select id="getMaxImgId" resultType="java.lang.Integer">
+        select ifnull(max(id), 0) from img;
+    </select>
+
+</mapper>

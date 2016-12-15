@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>挚友传媒</title>
+    <meta name="description" content="挚友  挚友传媒 传媒 四川挚友传媒有限公司">
+    <meta name="title" content="挚友传媒官方网站">
+
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+    <link rel="shortcut icon" href="./img/logo.png"/>
+    <style>
+        .responsive img {
+            background: #fff;
+            /*color: #3498db;*/
+            font-size: 36px;
+            line-height: 100px;
+            /*margin: 10px;*/
+            padding: 30px;
+            position: relative;
+            text-align: center;
+        }
+
+        .center .slick-center img {
+            -moz-transform: scale(1.08);
+            -ms-transform: scale(1.08);
+            -o-transform: scale(1.08);
+            -webkit-transform: scale(1.08);
+            color: #e67e22;
+            opacity: 1;
+            transform: scale(1.08);
+        }
+
+        .center img {
+            opacity: 0.5;
+            transition: all 300ms ease;
+        }
+
+        .slick-slide {
+            outline: none;
+        }
+
+    </style>
+</head>
+<!--<canvas style="position: absolute;z-index: -1;width: 100%;"></canvas>-->
+<body>
+
+<!--顶部的菜单栏-->
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#menu" style="margin-top:24px;">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/" style="padding-left:10px;">
+                <img src="./img/header4.png" alt="挚友传媒" height="50px"/>
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="menu" style="position:absolute;right:0;background: #FFF;">
+            <ul class="nav navbar-nav" style="padding-top:30px;">
+                <li><a href="/index.html" >首页</a></li>
+                <li><a href="/about.html">关于我们</a></li>
+                <li><a href="/movie-list.html">影视剧</a></li>
+                <li><a href="/issue-list.html">影视发行</a></li>
+                <li><a href="/star-list.html" style="color:#477b39;">艺人经纪</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+</div>
+
+<div class="container-fluid" style="margin-top:100px;">
+    <div class="row">
+        <div class="slider responsive center">
+            #foreach($single in $data.starList)
+                <div>
+                    <figure class="effect-zoe">
+                        <img style="width: 100%;height: auto;"
+                             src="$single.url"/>
+                        <figcaption style="opacity: 0.8;">
+                            <h3 style="text-align: left;">$single.title</h3>
+                            #foreach($text in $single.introList)
+                                <p style="text-align:left;margin:0;font-family: 微软雅黑;font-style: normal;">$text</p>
+                            #end
+                            <a href="$single.href">详情</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            #end
+        </div>
+    </div>
+</div>
+
+
+<script src="http://o9vd16zc6.bkt.clouddn.com/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="http://o9vd16zc6.bkt.clouddn.com/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+<script>
+
+    $('.center').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
+</script>
+</body>
+</html>

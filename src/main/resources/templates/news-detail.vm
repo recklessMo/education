@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>挚友传媒</title>
+    <meta name="description" content="挚友  挚友传媒 传媒 四川挚友传媒有限公司">
+    <meta name="title" content="挚友传媒官方网站">
+    <!--<link rel="stylesheet" type="text/css" href="./css/styles.css"/>-->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/index.css"/>
+    <link rel="shortcut icon" href="./img/logo.png"/>
+
+    <style>
+        .container p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!--顶部的菜单栏-->
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#menu" style="margin-top:24px;">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/" style="padding-left:10px;">
+                <img src="./img/header4.png" alt="挚友传媒" height="50px"/>
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="menu" style="position:absolute;right:0;background: #FFF;">
+            <ul class="nav navbar-nav" style="padding-top:30px;">
+                <li><a href="/index.html" >首页</a></li>
+                <li><a href="/about.html">关于我们</a></li>
+                <li><a href="/movie-list.html" style="color:#477b39;">影视剧</a></li>
+                <li><a href="/issue-list.html">影视发行</a></li>
+                <li><a href="/star-list.html">艺人经纪</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+</div>
+
+<!--首页大图-->
+<div class="container-fluid" style="margin-top:80px;">
+    <div class="row full" style="background: #f2f2f2;">
+        <div class="col-lg-8 col-lg-offset-2">
+            $data.text
+        </div>
+    </div>
+</div>
+
+<!--页脚-->
+<div class="container-fluid">
+    <div class="row" style="background: rgb(214, 217, 218);padding-top:20px;padding-bottom: 30px;">
+        <div class="col-md-4 text-center" style="height: 160px;border-right: solid 1px rgba(21, 18, 18, 0.26);">
+            <div style="margin-top:12px;">
+                <img src="./img/header4.png" alt="挚友传媒" height="50px"/>
+            </div>
+            <div style="margin-top:20px;font-size:12px;">
+                <i class="fa fa-map-marker" style="margin-left:-18px;"></i> 成都公司：成都市环球中心W5区7栋
+            </div>
+            <div style="margin-top:5px;font-size:12px;">
+                <i class="fa fa-map-marker"></i> 北京公司：北京东亿国际传媒C1座3-4层
+            </div>
+        </div>
+        <div class="col-md-4 text-center" style="height: 160px;border-right: solid 1px rgba(21, 18, 18, 0.26);">
+            <div style="margin-top:20px;font-size:15px;">
+                <i class="fa fa-phone"></i>  028-83395121
+            </div>
+            <div style="margin-top: 37px;font-size:12px;">
+                <div><a style="color:black;" href="http://www.miitbeian.gov.cn/">蜀ICP备16025683号</a></div>
+                <div style="margin-top:5px;">Copyright © 2016 zhiyouchuanmei All Rights Reserved</div>
+            </div>
+        </div>
+        <div class="col-md-4 text-center" style="height: 160px;border-right: solid 1px rgba(21, 18, 18, 0.26);padding-left:80px;">
+            <div style="margin-top: 20px;font-size:12px;">
+                <img style="float:left;" src="./img/wecode.jpeg" width="100px"/>
+                <div style="float:left;padding-left:20px;margin-top:50px;">
+                    扫一扫关注挚友传媒<br/>
+                    获取更多挚友传媒资讯
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="http://o9vd16zc6.bkt.clouddn.com/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="http://o9vd16zc6.bkt.clouddn.com/bootstrap.min.js"></script>
+
+<script>
+    $('#myCarousel').carousel({
+        interval: 5000 //changes the speed
+    })
+</script>
+
+</body>
+</html>

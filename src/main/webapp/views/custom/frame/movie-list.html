@@ -1,0 +1,152 @@
+<div style="background: #fff;overflow: auto;height:100%;padding: 15px;border: 1px solid #cfdbe2;">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-1" style="margin-top:6px;">
+                第一张头图
+            </div>
+            <div class="col-md-4">
+                <input ng-model="obj.firstHead.url" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchImg(1)">修改</button>
+            </div>
+
+            <div class="col-md-1" style="margin-top:6px;">
+                跳转页面
+            </div>
+            <div class="col-md-4">
+                <input ng-model="obj.firstHead.href" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchPage(1)">修改</button>
+            </div>
+        </div>
+
+        <div class="col-md-12" style="margin-top:20px;">
+            <div class="col-md-1" style="margin-top:6px;">
+                第二张头图
+            </div>
+            <div class="col-md-4">
+                <input ng-model="obj.secondHead.url" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchImg(2)">修改</button>
+            </div>
+
+            <div class="col-md-1" style="margin-top:6px;">
+                跳转页面
+            </div>
+            <div class="col-md-4">
+                <input ng-model="obj.secondHead.href" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchPage(2)">修改</button>
+            </div>
+        </div>
+
+        <div class="col-md-12" style="margin-top:20px;">
+            <div class="col-md-1" style="margin-top:6px;">
+                第三张头图
+            </div>
+            <div class="col-md-4">
+                <input ng-model="obj.thirdHead.url" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchImg(3)">修改</button>
+            </div>
+
+            <div class="col-md-1" style="margin-top:6px;">
+                跳转页面
+            </div>
+            <div class="col-md-4">
+                <input ng-model="obj.thirdHead.href" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchPage(3)">修改</button>
+            </div>
+        </div>
+
+        <div class="col-md-12" style="margin-top:20px;">
+            <div class="col-md-6" style="margin-top:6px;">
+                电影列表
+                <button class="btn btn-info" ng-click="addFilmItem({})">添加</button>
+            </div>
+        </div>
+
+        <div class="col-md-12" style="margin-top:20px;">
+            <table ng-table="filmTableParams"
+                   class="table table-bordered table-hover table-condensed editable-table none-padding-table">
+                <tr ng-repeat="row in $data">
+                    <td title="'操作'">
+                        <button class="btn btn-link btn-sm" ng-click="deleteFilmItem(row)">删除</button>
+                    </td>
+                    <td title="'照片'">
+                        <div class="form-inline">
+                            <input style="width: calc(100% - 80px);" class="form-control" ng-model="row.url" type="text" disabled="1" placeholder="图片"/>
+                            <button class="btn btn-info" ng-click="searchImgInRow(row)">添加</button>
+                        </div>
+                    </td>
+                    <td title="'跳转'">
+                        <div class="form-inline">
+                            <input style="width: calc(100% - 80px);" class="form-control" ng-model="row.href" type="text" disabled="1" placeholder="图片"/>
+                            <button class="btn btn-info" ng-click="searchPageInRow(row)">添加</button>
+                        </div>
+                    </td>
+                    <td title="'标题'">
+                        <input ng-model="row.title" class="form-control" type="text"/>
+                    </td>
+                    <td title="'正文'">
+                        <input ng-model="row.text" class="form-control" type="text"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col-md-12" style="margin-top:20px;">
+            <div class="col-md-6" style="margin-top:6px;">
+                资讯列表
+                <button class="btn btn-info" ng-click="addArticleItem({})">添加</button>
+            </div>
+        </div>
+
+        <div class="col-md-12" style="margin-top:20px;">
+            <table ng-table="articleTableParams"
+                   class="table table-bordered table-hover table-condensed editable-table none-padding-table">
+                <tr ng-repeat="row in $data">
+                    <td title="'操作'">
+                        <button class="btn btn-link btn-sm" ng-click="deleteArticleItem(row)">删除</button>
+                    </td>
+                    <td title="'照片'">
+                        <div class="form-inline">
+                            <input style="width: calc(100% - 80px);" class="form-control" ng-model="row.url" type="text" disabled="1" placeholder="图片"/>
+                            <button class="btn btn-info" ng-click="searchImgInRow(row)">添加</button>
+                        </div>
+                    </td>
+                    <td title="'跳转'">
+                        <div class="form-inline">
+                            <input style="width: calc(100% - 80px);" class="form-control" ng-model="row.href" type="text" disabled="1" placeholder="图片"/>
+                            <button class="btn btn-info" ng-click="searchPageInRow(row)">添加</button>
+                        </div>
+                    </td>
+                    <td title="'标题'">
+                        <input ng-model="row.title" class="form-control" type="text"/>
+                    </td>
+                    <td title="'正文'">
+                        <input ng-model="row.desc" class="form-control" type="text"/>
+                    </td>
+                    <td title="'日期'">
+                        <input ng-model="row.date" class="form-control" type="text"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="col-md-12 text-center" style="margin-top:20px;">
+            <button class="btn btn-info" ng-click="publish()">发布</button>
+            <button class="btn btn-danger" ng-click="closeThisDialog({})" style="margin-left:20px;">取消</button>
+        </div>
+    </div>
+
+
+</div>

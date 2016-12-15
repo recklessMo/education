@@ -1,0 +1,129 @@
+<div style="background: #fff;overflow: auto;height:100%;padding: 15px;border: 1px solid #cfdbe2;">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            艺人详情页
+        </div>
+
+        <div class="col-md-12 text-center" style="margin-top:30px;">
+            <div class="col-md-2" style="margin-top:6px;">
+                姓名
+            </div>
+            <div class="col-md-10">
+                <input ng-model="obj.name" class="form-control" placeholder="艺人姓名"/>
+            </div>
+        </div>
+
+        <!--第一屏幕-->
+        <div class="col-md-12 text-center" style="margin-top:30px;font-size:25px;">
+                第一屏幕
+        </div>
+
+        <div class="col-md-12" style="margin-top:30px;">
+            <div class="col-md-5">
+                <input ng-model="obj.firstLeft" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchImg(1)">修改</button>
+            </div>
+            <div class="col-md-5">
+                <input ng-model="obj.firstRight" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchImg(2)">修改</button>
+            </div>
+        </div>
+
+        <div class="col-md-12 text-center" style="margin-top:30px;font-size:25px;">
+            <input ng-model="obj.firstTitle" class="form-control" placeholder="标题"/>
+            <input ng-model="obj.firstText" class="form-control" placeholder="文字"/>
+        </div>
+
+        <!--第二屏幕-->
+        <div class="col-md-12 text-center" style="margin-top:30px;font-size:25px;">
+            第二屏幕
+        </div>
+
+        <div class="col-md-12" style="margin-top:30px;">
+            <div class="col-md-5">
+                <input ng-model="obj.secondLeft" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchImg(3)">修改</button>
+            </div>
+            <div class="col-md-5">
+                <input ng-model="obj.secondRight" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchImg(4)">修改</button>
+            </div>
+        </div>
+
+        <div class="col-md-12 text-center" style="margin-top:30px;font-size:25px;">
+            <input ng-model="obj.secondTitle" class="form-control" placeholder="标题"/>
+            <input ng-model="obj.secondText" class="form-control" placeholder="文字"/>
+        </div>
+
+        <!--第三屏幕-->
+        <div class="col-md-12 text-center" style="margin-top:30px;font-size:25px;">
+            第三屏幕
+        </div>
+
+        <div class="col-md-12" style="margin-top:30px;">
+            <div class="col-md-3">
+                <input ng-model="obj.thirdLeft" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchImg(5)">修改</button>
+            </div>
+            <div class="col-md-3">
+                <input ng-model="obj.thirdMiddle" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchImg(6)">修改</button>
+            </div>
+            <div class="col-md-3">
+                <input ng-model="obj.thirdRight" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchImg(7)">修改</button>
+            </div>
+        </div>
+
+        <div class="col-md-12 text-center" style="margin-top:30px;font-size:25px;">
+            <input ng-model="obj.thirdTitle" class="form-control" placeholder="标题"/>
+            <input ng-model="obj.thirdText" class="form-control" placeholder="文字~"/>
+        </div>
+
+        <!--第四屏幕-->
+        <div class="col-md-12 text-center" style="margin-top:30px;font-size:25px;">
+            第四屏幕
+        </div>
+
+        <div class="col-md-12" style="margin-top:30px;">
+            <div class="col-md-5">
+                <input ng-model="obj.fourthLeft" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchImg(8)">修改</button>
+            </div>
+            <div class="col-md-5">
+                <input ng-model="obj.fourthRight" class="form-control" disabled="1"/>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-info" ng-click="searchImg(9)">修改</button>
+            </div>
+        </div>
+
+        <div class="col-md-12 text-center" style="margin-top:30px;font-size:25px;">
+            <input ng-model="obj.fourthTitle" class="form-control" placeholder="标题~"/>
+            <input ng-model="obj.fourthText" class="form-control" placeholder="文字~"/>
+        </div>
+
+        <div class="col-md-12 text-center" style="margin-top:20px;">
+            <button class="btn btn-info" ng-click="publish()">发布</button>
+            <button class="btn btn-danger" ng-click="closeThisDialog({})" style="margin-left:20px;">取消</button>
+        </div>
+    </div>
+
+
+</div>
