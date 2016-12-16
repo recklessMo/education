@@ -64,6 +64,11 @@
             url: '/login',
             title: 'Login',
             templateUrl: helper.basepath('login.html')
+        })
+        .state('page.404', {
+            url: '/404',
+            title: '404',
+            templateUrl: helper.basepath('404.html')
         });
     }
 

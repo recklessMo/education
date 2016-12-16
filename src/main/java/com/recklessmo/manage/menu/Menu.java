@@ -9,10 +9,13 @@ package com.recklessmo.manage.menu;
 public class Menu{
 
     public static Menu[] menuList = {
-            new Menu(100, null, "帐号管理", "icon-settings", "app.account"),
-            new Menu(200, null, "文件上传", "icon-settings", "app.upload"),
-            new Menu(300, null, "页面管理", "icon-settings", "app.frame"),
-            new Menu(400, null, "剧本投递", "icon-settings", "app.post")
+            new Menu(100, null, "学生管理", "icon-settings", ""),
+            new Menu(101, "学生管理", "学生查询", "icon-settings", "app.account"),
+            new Menu(102, "学生管理", "学生录入", "icon-settings", "app.account"),
+
+            new Menu(200, null, "文件上传", "icon-settings", ""),
+            new Menu(300, null, "页面管理", "icon-settings", ""),
+            new Menu(400, null, "剧本投递", "icon-settings", "")
     };
 
 

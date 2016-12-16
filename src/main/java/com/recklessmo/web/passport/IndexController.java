@@ -12,15 +12,26 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class IndexController {
 
+    /**
+     * 主页面, 需要验证
+     * @return
+     */
     @PreAuthorize("hasAnyAuthority('login')")
     @RequestMapping(value = "/")
     public String index(){
         return "index";
     }
 
+    /**
+     *
+     * 登录页面不进行验证
+     *
+     * @return
+     */
     @RequestMapping(value = "/login")
     public String index_login(){
         return "index";
     }
+
 
 }
