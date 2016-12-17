@@ -34,8 +34,11 @@
                 username-parameter="username"
                 password-parameter="password"/>
 
+        <!--配置登出-->
         <logout delete-cookies="_edu" logout-url="/logout" logout-success-url="/login#/page/login"/>
+        <!--配置remember-->
         <remember-me services-ref="rememberService"/>
+
     </http>
 
     <!--
@@ -74,7 +77,7 @@
         <beans:property name="userDetailsService" ref="userDetailService"/>
     </beans:bean>
 
-    <!--由于自定义了rememberservice, 所以还需要定义一个自定义的provider, 并且保持key一致-->
+    <!-- 由于自定义了rememberservice, 所以还需要定义一个自定义的provider, 并且保持key一致, 否则验证不会通过 -->
     <beans:bean id="rememberMeAuthenticationProvider" class="org.springframework.security.authentication.RememberMeAuthenticationProvider">
         <beans:property name="key" value="educationKey"/>
     </beans:bean>
